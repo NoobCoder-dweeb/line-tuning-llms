@@ -1,16 +1,32 @@
 [project]
 name = "fine-tuning-llms"
 version = "0.1.0"
-description = ""
+description = "Fine tuning RoBERTa to do sentiment analysis on Instagram comments"
 authors = [
     {name = "exiler",email = "skoay087@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+torch = "^2.6.0"
+transformers = "^4.49.0"
+huggingface-hub = "^0.29.1"
+peft = "^0.14.0"
+evaluate = "^0.4.3"
+accelerate = "^1.4.0"
+bitsandbytes = "^0.45.3"
+numpy = "^2.2.3"
+pandas = "^2.2.3"
+matplotlib = "^3.10.1"
+seaborn = "^0.13.2"
+
